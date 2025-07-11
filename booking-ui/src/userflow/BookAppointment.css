@@ -1,0 +1,22 @@
+.booking-container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+}
+
+select,
+button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.react-calendar {
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+}

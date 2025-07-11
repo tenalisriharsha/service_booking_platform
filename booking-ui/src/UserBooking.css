@@ -1,0 +1,224 @@
+/* UserBooking.css */
+
+.booking-container {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 28px 0 rgba(80,90,130,0.08);
+  padding: 32px;
+}
+
+.booking-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #3578e5;
+}
+
+.providers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  margin: 22px 0;
+}
+
+.provider-btn {
+  background: #f3f6fa;
+  border: 1.5px solid #3578e5;
+  color: #3578e5;
+  border-radius: 12px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(80,90,130,0.07);
+  transition: background 0.18s, color 0.18s, box-shadow 0.16s;
+}
+.provider-btn.selected,
+.provider-btn:hover {
+  background: #3578e5;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(53,120,229,0.17);
+}
+
+.availability-title {
+  margin-top: 18px;
+  margin-bottom: 5px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #254573;
+}
+
+.booking-form {
+  background: #f8fafd;
+  padding: 22px 18px;
+  border-radius: 10px;
+  border: 1.5px solid #d5e3f8;
+  margin-top: 24px;
+}
+
+.booking-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.booking-form input[type="time"] {
+  border: 1.2px solid #b0c4de;
+  border-radius: 5px;
+  padding: 2px 9px;
+  font-size: 1.03rem;
+  margin-right: 12px;
+  outline: none;
+}
+
+.booking-form button {
+  margin-top: 14px;
+  margin-right: 12px;
+  background: #3578e5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.07rem;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.booking-form button.cancel {
+  background: #c7c7c7;
+  color: #254573;
+}
+.booking-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.booking-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(30,60,110,0.07);
+  padding: 2rem;
+}
+
+.logout-btn {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 0.6rem 0;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.logout-btn:hover { background: #554eea; }
+
+.booking-header {
+  color: #3476e6;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1.7rem;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.6rem;
+  align-items: center;
+}
+.search-bar input, .search-bar button {
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+.search-bar button {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.search-bar button:hover { background: #554eea; }
+
+.providers-list {
+  list-style: none;
+  padding: 0;
+}
+.provider-card {
+  margin-bottom: 2.2rem;
+  background: #f8f8fd;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(50,60,90,0.05);
+  padding: 1.2rem 1rem 0.7rem 1rem;
+}
+.provider-header {
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+  color: #222;
+}
+.slots-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.slot-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e7e8fc;
+  margin-bottom: 0.7rem;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  font-size: 0.98rem;
+}
+.slot-card button {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.96rem;
+  font-weight: 600;
+  padding: 0.5rem 1.1rem;
+  transition: background 0.2s;
+}
+.slot-card button:hover { background: #5347cc; }
+.slot-info {
+  flex: 1;
+  font-size: 0.97rem;
+  color: #23264b;
+}
+@media (max-width: 650px) {
+  .booking-container { padding: 1rem; }
+  .slot-card { flex-direction: column; gap: 0.5rem; align-items: flex-start; }
+}
+.username-header {
+  background: #f4f7ff;
+  border-radius: 8px;
+  padding: 0.6rem;
+  margin-bottom: 1.3rem;
+  color: #3174ad;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 6px #e3ebff80;
+}
+.register-btn {
+  margin-top: 1.2rem;
+  width: 100%;
+  padding: 0.6rem 0;
+  background: #3578e5;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 1.07rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.register-btn:hover { background: #255a8a; }
